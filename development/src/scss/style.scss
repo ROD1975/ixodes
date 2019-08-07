@@ -1,0 +1,43 @@
+@import "settings";
+@import "fonts";
+@import "menu";
+@import "header";
+@import "portfolio";
+@import "services";
+@import "about";
+@import "clients";
+@import "footer";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  outline: none;
+}
+body {
+  font-family: "Lato", sans-serif;
+}
+.wrapper {
+  position: relative;
+  min-height: 100vh;
+  width: 100%;
+  z-index: 3;
+}
+.container {
+  padding: 18px;
+}
+@include breakpoint(tablet) {
+  .container {
+    width: 750px;
+  }
+}
+@include breakpoint(laptop) {
+  .container {
+    width: 970px;
+  }
+}
+@include breakpoint(desktop) {
+  .container {
+    width: 1170px;
+  }
+}

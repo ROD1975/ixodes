@@ -1,0 +1,1 @@
+const images=[...document.querySelectorAll(".container__work")];images.forEach(e=>{const t=[...e.children];e.addEventListener("mouseover",o=>{t[1].style.background=e.dataset.bgColor,t[1].style.opacity="1"}),e.addEventListener("mouseout",()=>{t[1].style.background="transparent",t[1].style.opacity="0"}),e.addEventListener("click",()=>{t[0]})});

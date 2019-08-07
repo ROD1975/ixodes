@@ -1,0 +1,1 @@
+window.addEventListener("load",()=>{const e=document.querySelector(".loading"),o=document.querySelector(".loading h2"),t=document.querySelector(".loading-image");(new TimelineMax).to(o,1,{y:-200,opacity:0}).to(t,1,{y:-200,opacity:0},"-=1").to(e,1,{opacity:0}),setTimeout(()=>{e.remove()},2e3)});

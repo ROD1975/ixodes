@@ -1,0 +1,27 @@
+$bgColor: #1d1d1d;
+$white: #fff;
+$red: #ee3643;
+$indexLogo: 1000;
+$indexMenu: 10;
+@mixin breakpoint($point) {
+  @if $point == phablet {
+    @media (min-width: 36em) {
+      @content;
+    }
+  }
+  @if $point == tablet {
+    @media (min-width: 48em) {
+      @content;
+    }
+  }
+  @if $point == laptop {
+    @media (min-width: 62em) {
+      @content;
+    }
+  }
+  @if $point == desktop {
+    @media (min-width: 75em) {
+      @content;
+    }
+  }
+}
